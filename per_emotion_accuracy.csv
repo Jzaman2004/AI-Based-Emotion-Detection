@@ -1,0 +1,8 @@
+Emotion,Correct,Total,Accuracy (%),95% CI Lower,95% CI Upper
+Joy,10,10,100.0,69.2,100.0
+Sadness,10,10,100.0,69.2,100.0
+Anger,5,10,50.0,18.7,81.3
+Disgust,3,10,30.0,6.7,65.2
+Fear,0,10,0.0,0.0,30.8
+Hate,0,10,0.0,0.0,30.8
+Surprise,0,10,0.0,0.0,30.8

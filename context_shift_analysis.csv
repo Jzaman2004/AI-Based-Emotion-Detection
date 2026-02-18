@@ -1,0 +1,4 @@
+Model,Context Shifts,Total Images,Shift Rate (%),Harmful Shifts,Helpful Shifts
+Qwen,3,70,4.3,0,1
+Phi,19,70,27.1,5,2
+Idefics,27,70,38.6,5,5

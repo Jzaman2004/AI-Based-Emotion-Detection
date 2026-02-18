@@ -1,0 +1,50 @@
+Demographic,Group,Emotion,Group Accuracy (%),Group Size,Other Groups Accuracy (%),p-value,Significant (α=0.05),Test Type
+Gender,Female,Anger,40.0,5,60.0,1.0,No,Fisher's Exact
+Gender,Male,Anger,60.0,5,40.0,1.0,No,Fisher's Exact
+Gender,Female,Disgust,20.0,5,40.0,1.0,No,Fisher's Exact
+Gender,Male,Disgust,40.0,5,20.0,1.0,No,Fisher's Exact
+Gender,Female,Fear,0.0,5,0.0,1.0,No,Fisher's Exact
+Gender,Male,Fear,0.0,5,0.0,1.0,No,Fisher's Exact
+Gender,Female,Hate,0.0,5,0.0,1.0,No,Fisher's Exact
+Gender,Male,Hate,0.0,5,0.0,1.0,No,Fisher's Exact
+Gender,Female,Joy,100.0,5,100.0,1.0,No,Fisher's Exact
+Gender,Male,Joy,100.0,5,100.0,1.0,No,Fisher's Exact
+Gender,Female,Sadness,100.0,5,100.0,1.0,No,Fisher's Exact
+Gender,Male,Sadness,100.0,5,100.0,1.0,No,Fisher's Exact
+Gender,Female,Surprise,0.0,5,0.0,1.0,No,Fisher's Exact
+Gender,Male,Surprise,0.0,5,0.0,1.0,No,Fisher's Exact
+Race,Black American,Anger,100.0,2,37.5,0.5,No,Binomial (Fisher skipped)
+Race,Caucasian White,Anger,0.0,2,62.5,0.5,No,Binomial (Fisher skipped)
+Race,East Asian,Anger,50.0,2,50.0,1.0,No,Fisher's Exact
+Race,Latino,Anger,50.0,2,50.0,1.0,No,Fisher's Exact
+Race,South Asian,Anger,50.0,2,50.0,1.0,No,Fisher's Exact
+Race,Black American,Disgust,0.0,2,37.5,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Disgust,50.0,2,25.0,1.0,No,Fisher's Exact
+Race,East Asian,Disgust,0.0,2,37.5,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Disgust,50.0,2,25.0,1.0,No,Fisher's Exact
+Race,South Asian,Disgust,50.0,2,25.0,1.0,No,Fisher's Exact
+Race,Black American,Fear,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Fear,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,East Asian,Fear,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Fear,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,South Asian,Fear,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Black American,Hate,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Hate,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,East Asian,Hate,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Hate,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,South Asian,Hate,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Black American,Joy,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Joy,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,East Asian,Joy,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Joy,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,South Asian,Joy,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Black American,Sadness,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Sadness,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,East Asian,Sadness,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Sadness,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,South Asian,Sadness,100.0,2,100.0,1.0,No,Binomial (Fisher skipped)
+Race,Black American,Surprise,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Caucasian White,Surprise,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,East Asian,Surprise,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,Latino,Surprise,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
+Race,South Asian,Surprise,0.0,2,0.0,1.0,No,Binomial (Fisher skipped)
