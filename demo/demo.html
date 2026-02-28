@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Emotion Analysis - Capture</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <header class="disclaimer-banner">
+      ⚠️ Demo Only: This AI may exhibit bias regarding race, gender, and emotion. Results are probabilistic, not definitive. Not for high-stakes decisions. See research:
+      <a href="https://github.com/Jzaman2004/AI-Based-Emotion-Detection" target="_blank" rel="noopener noreferrer">AI-Based-Emotion-Detection</a>
+    </header>
+
+    <main class="page">
+      <section class="card">
+        <h1>🎭 AI Emotion Analysis Demo</h1>
+
+        <div class="video-container">
+          <video id="camera-feed" autoplay playsinline muted></video>
+          <canvas id="capture-canvas" hidden></canvas>
+        </div>
+
+        <div class="controls">
+          <button id="capture-btn" class="primary">Capture &amp; Analyze</button>
+        </div>
+
+        <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

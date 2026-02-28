@@ -19,6 +19,7 @@
 - [📊 Dataset & Methodology](#-dataset--methodology)
 - [🛠️ Installation & Requirements](#️-installation--requirements)
 - [🚀 Usage Guide](#-usage-guide)
+- [🎭 Demo Web App](#-demo-web-app)
 - [📂 Repository Structure](#-repository-structure)
 - [📈 Statistical Analysis & Outputs](#-statistical-analysis--outputs)
 - [⚠️ Limitations & Ethical Considerations](#️-limitations--ethical-considerations)
@@ -178,6 +179,14 @@ valid_ids = sorted([
     *   Results are saved to `emotion_results.csv` in the root directory.
     *   Statistical CSVs are saved to `results/csv/`.
     *   Visualizations are saved to `results/figures/`.
+
+---
+
+## 🎭 Demo Web App
+
+This repository also includes a lightweight demo web app in the `demo/` folder for quick camera-based emotion analysis previews.
+
+For demo setup and usage details, see: `demo/demoREADME.md`.
 
 ---
 

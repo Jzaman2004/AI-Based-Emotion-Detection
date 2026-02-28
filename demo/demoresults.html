@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Emotion Analysis - Results</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <header class="disclaimer-banner">
+      ⚠️ Demo Only: This AI may exhibit bias regarding race, gender, and emotion. Results are probabilistic, not definitive. Not for high-stakes decisions. See research:
+      <a href="https://github.com/Jzaman2004/AI-Based-Emotion-Detection" target="_blank" rel="noopener noreferrer">AI-Based-Emotion-Detection</a>
+    </header>
+
+    <main class="page results-page">
+      <section class="card">
+        <h1>Analysis Results</h1>
+
+        <div class="results-layout">
+          <section class="results-left">
+            <div class="result-image-wrap">
+              <img id="captured-image" alt="Captured frame" />
+            </div>
+            <div id="empty-state" class="status-message" hidden>
+              Capture image first.
+            </div>
+          </section>
+
+          <section class="results-right" id="results-content">
+            <div class="result-item">
+              <label>Person Visible:</label>
+              <span id="person-visible" class="badge">Capture image first</span>
+            </div>
+
+            <div class="result-item">
+              <label>Gender Identified:</label>
+              <span id="gender" class="badge">Capture image first</span>
+            </div>
+
+            <div class="result-item">
+              <label>Race Identified:</label>
+              <span id="race" class="badge">Capture image first</span>
+            </div>
+
+            <div class="emotions-grid">
+              <h4>Emotion Analysis</h4>
+
+              <div class="emotion-bar" data-emotion="joy">
+                <span class="label">Joy</span>
+                <div class="bar-bg"><div class="bar-fill" id="joy-bar" style="width: 0%"></div></div>
+                <span class="percent" id="joy-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="sadness">
+                <span class="label">Sadness</span>
+                <div class="bar-bg"><div class="bar-fill" id="sadness-bar" style="width: 0%"></div></div>
+                <span class="percent" id="sadness-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="anger">
+                <span class="label">Anger</span>
+                <div class="bar-bg"><div class="bar-fill" id="anger-bar" style="width: 0%"></div></div>
+                <span class="percent" id="anger-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="fear">
+                <span class="label">Fear</span>
+                <div class="bar-bg"><div class="bar-fill" id="fear-bar" style="width: 0%"></div></div>
+                <span class="percent" id="fear-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="disgust">
+                <span class="label">Disgust</span>
+                <div class="bar-bg"><div class="bar-fill" id="disgust-bar" style="width: 0%"></div></div>
+                <span class="percent" id="disgust-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="surprise">
+                <span class="label">Surprise</span>
+                <div class="bar-bg"><div class="bar-fill" id="surprise-bar" style="width: 0%"></div></div>
+                <span class="percent" id="surprise-percent">0%</span>
+              </div>
+
+              <div class="emotion-bar" data-emotion="hate">
+                <span class="label">Hate</span>
+                <div class="bar-bg"><div class="bar-fill" id="hate-bar" style="width: 0%"></div></div>
+                <span class="percent" id="hate-percent">0%</span>
+              </div>
+            </div>
+
+            <div class="result-item highlight">
+              <label>Dominant Emotion:</label>
+              <span id="dominant-emotion" class="badge large">Capture image first</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="controls">
+          <button id="retry-btn" class="secondary">Retry</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/js/results.js"></script>
+  </body>
+</html>
