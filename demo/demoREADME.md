@@ -33,7 +33,17 @@ This demo is for educational purposes only. AI emotion recognition has documente
    - Position face in frame
    - Click "Capture & Analyze"
    - You will be redirected to a results page
+   - On results, use **Share Your Perspective** to vote on ethical questions
+   - Each question has separate **Yes** and **No** vote buttons
+   - Each vote increments the matching **Yes** or **No** counter live
+   - Counters persist only for the current browser session (`sessionStorage`)
    - Click "Retry" on results page to return to capture page
+
+## 💬 Ethical Feedback Feature
+- Located on the results page, below the **Retry** button
+- Includes multiple ethical perspective questions, each with **Yes**/**No** vote buttons
+- Each click increases the corresponding **Yes** or **No** counter immediately on the page
+- Counter state is session-scoped and resets when session storage is cleared or session ends
 
 ## 🔒 Security
 - API key is stored in `.env` (never committed)

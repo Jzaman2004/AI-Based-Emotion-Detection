@@ -98,6 +98,61 @@
         <div class="controls">
           <button id="retry-btn" class="secondary">Retry</button>
         </div>
+
+        <section class="feedback-section" aria-labelledby="feedback-heading">
+          <h2 id="feedback-heading">Share Your Perspective</h2>
+          <p class="subtitle">Pick any option below. Counts update for this session only.</p>
+
+          <div class="feedback-options" id="feedback-options">
+            <div class="feedback-option" data-feedback-key="fairness-concern">
+              <p class="feedback-question">Do the results seem fair across different people?</p>
+              <div class="feedback-votes">
+                <button class="feedback-vote" data-feedback-key="fairness-concern" data-feedback-answer="yes" type="button">
+                  Yes <span class="feedback-count" id="count-fairness-concern-yes">0</span>
+                </button>
+                <button class="feedback-vote" data-feedback-key="fairness-concern" data-feedback-answer="no" type="button">
+                  No <span class="feedback-count" id="count-fairness-concern-no">0</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="feedback-option" data-feedback-key="context-mismatch">
+              <p class="feedback-question">Could lighting or camera quality be affecting this result?</p>
+              <div class="feedback-votes">
+                <button class="feedback-vote" data-feedback-key="context-mismatch" data-feedback-answer="yes" type="button">
+                  Yes <span class="feedback-count" id="count-context-mismatch-yes">0</span>
+                </button>
+                <button class="feedback-vote" data-feedback-key="context-mismatch" data-feedback-answer="no" type="button">
+                  No <span class="feedback-count" id="count-context-mismatch-no">0</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="feedback-option" data-feedback-key="emotion-uncertain">
+              <p class="feedback-question">Should emotion predictions be treated as uncertain by default?</p>
+              <div class="feedback-votes">
+                <button class="feedback-vote" data-feedback-key="emotion-uncertain" data-feedback-answer="yes" type="button">
+                  Yes <span class="feedback-count" id="count-emotion-uncertain-yes">0</span>
+                </button>
+                <button class="feedback-vote" data-feedback-key="emotion-uncertain" data-feedback-answer="no" type="button">
+                  No <span class="feedback-count" id="count-emotion-uncertain-no">0</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="feedback-option" data-feedback-key="high-stakes-limit">
+              <p class="feedback-question">Should this system be avoided for high-stakes decisions?</p>
+              <div class="feedback-votes">
+                <button class="feedback-vote" data-feedback-key="high-stakes-limit" data-feedback-answer="yes" type="button">
+                  Yes <span class="feedback-count" id="count-high-stakes-limit-yes">0</span>
+                </button>
+                <button class="feedback-vote" data-feedback-key="high-stakes-limit" data-feedback-answer="no" type="button">
+                  No <span class="feedback-count" id="count-high-stakes-limit-no">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
 

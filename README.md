@@ -186,6 +186,8 @@ valid_ids = sorted([
 
 This repository also includes a lightweight demo web app in the `demo/` folder for quick camera-based emotion analysis previews.
 
+The demo results page includes an ethical feedback section where users can vote on perspective questions, with live per-option counters tracked for the current browser session.
+
 For demo setup and usage details, see: `demo/demoREADME.md`.
 
 ---
