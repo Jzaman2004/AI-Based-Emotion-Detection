@@ -202,11 +202,10 @@ AI-Based-Emotion-Detection/
 │   ├── Emotion_AI_Final_Code.ipynb   # Main Colab notebook
 │   └── emotion_ai_final_code.py      # Python script version
 │
-├── data/                              # Dataset
-│   └── test_images/                  # 70 facial expression images (4-char IDs)
-│       ├── MCWJ.jpg                  # Male Caucasian White Joy
-│       ├── FBAA.jpg                  # Female Black American Anger
-│       └── ... (65 more images)
+├── data/                              # Dataset (70 facial expression images, 4-char IDs)
+│   ├── MCWJ.jpg                      # Male Caucasian White Joy
+│   ├── FBAA.jpg                      # Female Black American Anger
+│   └── ... (68 more images)
 │
 └── results/                           # Generated analysis outputs
     ├── csv/                          # Statistical analysis results
