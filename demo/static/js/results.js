@@ -134,7 +134,7 @@ function loadPageData() {
 function onRetry() {
   sessionStorage.removeItem("capturedImage");
   sessionStorage.removeItem("analysisData");
-  window.location.href = "/";
+  window.location.replace("/");
 }
 
 retryBtn.addEventListener("click", onRetry);

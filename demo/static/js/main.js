@@ -3,6 +3,8 @@ const video = document.getElementById("camera-feed");
 const canvas = document.getElementById("capture-canvas");
 const loading = document.getElementById("loading");
 const statusMessage = document.getElementById("status-message");
+const consentOverlay = document.getElementById("consent-overlay");
+const consentAgreeBtn = document.getElementById("consent-agree-btn");
 
 const captureCooldownMs = 5000;
 let lastCaptureTime = 0;
@@ -24,6 +26,24 @@ function stopCamera() {
     mediaStream.getTracks().forEach((track) => track.stop());
     mediaStream = null;
   }
+}
+
+function showConsentPopup() {
+  return new Promise((resolve) => {
+    if (!consentOverlay || !consentAgreeBtn) {
+      resolve();
+      return;
+    }
+
+    consentOverlay.hidden = false;
+
+    const onAgree = () => {
+      consentOverlay.hidden = true;
+      resolve();
+    };
+
+    consentAgreeBtn.addEventListener("click", onAgree, { once: true });
+  });
 }
 
 async function startCamera() {
@@ -109,8 +129,12 @@ captureBtn.addEventListener("click", captureAndAnalyze);
 
 window.addEventListener("DOMContentLoaded", async () => {
   setLoading(false);
+  captureBtn.disabled = true;
+  await showConsentPopup();
   const started = await startCamera();
   if (!started) {
     captureBtn.disabled = true;
+    return;
   }
+  captureBtn.disabled = false;
 });
