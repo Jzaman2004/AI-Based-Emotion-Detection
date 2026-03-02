@@ -73,6 +73,7 @@ This project utilizes three open-weight multimodal vision-language models hosted
 
 ### Dataset Composition
 *   **Total Images:** 70 open-source facial images.
+*   **Metadata File:** `data/Picture Set Tracking Sheet.xlsx` (image source, DOI, and license details).
 *   **Balance:** Balanced by sex, race/ethnicity, and expression intensity.
 *   **Demographics:**
     *   **Sex:** Male, Female (35 each)
@@ -168,6 +169,7 @@ valid_ids = sorted([
     ```
 2.  **Prepare Data:**
     *   Upload the 70 facial images to your Google Drive folder `/MyDrive/Jawad Emotion AI`.
+    *   Keep the metadata tracking sheet (`Picture Set Tracking Sheet.xlsx`) in the repository `data/` folder.
     *   Ensure images follow the 4-character ID naming convention (e.g., `MCWJ.png`).
 3.  **Run the Notebook:**
     *   Open `code/Emotion_AI_Final_Code.ipynb` in Google Colab.
@@ -204,7 +206,9 @@ AI-Based-Emotion-Detection/
 │   ├── Emotion_AI_Final_Code.ipynb   # Main Colab notebook
 │   └── emotion_ai_final_code.py      # Python script version
 │
-├── data/                              # Dataset (70 facial expression images, 4-char IDs)
+├── data/                              # Dataset assets
+│   ├── Picture Set Tracking Sheet.xlsx # Image metadata (source, DOI, license)
+│   ├── ... (70 facial expression images, 4-char IDs)
 │   ├── MCWJ.jpg                      # Male Caucasian White Joy
 │   ├── FBAA.jpg                      # Female Black American Anger
 │   └── ... (68 more images)
