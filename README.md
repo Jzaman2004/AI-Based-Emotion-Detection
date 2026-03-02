@@ -212,6 +212,18 @@ AI-Based-Emotion-Detection/
 │   ├── FBAA.jpg                      # Female Black American Anger
 │   └── ... (68 more images)
 │
+├── demo/                              # Lightweight web demo
+│   ├── app.py                         # Flask backend
+│   ├── demo.html                      # Demo UI page
+│   ├── demoresults.html               # Results page
+│   ├── demoREADME.md                  # Demo setup and usage
+│   ├── requirements.txt               # Demo dependencies
+│   └── static/                        # Demo assets
+│       ├── css/styles.css
+│       └── js/
+│           ├── main.js
+│           └── results.js
+│
 └── results/                           # Generated analysis outputs
     ├── emotion_results.csv            # Main results file (68 columns)
     ├── csv/                          # Statistical analysis results
