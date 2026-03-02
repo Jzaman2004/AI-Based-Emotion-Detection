@@ -154,7 +154,7 @@ valid_ids = sorted([
 
 # STEP 6: AUTOMATED BATCH PROCESSING
 # Loops through all 70 images, 2 contexts, 3 models
-# Outputs: emotion_results.csv (68 columns)
+# Outputs: results/emotion_results.csv (68 columns)
 ```
 </details>
 
@@ -178,7 +178,7 @@ valid_ids = sorted([
 4.  **Statistical Analysis:**
     *   Run the **Statistical Analysis** blocks (1-8) to generate CSV reports and PNG visualizations.
 5.  **Output:**
-    *   Results are saved to `emotion_results.csv` in the root directory.
+    *   Results are saved to `results/emotion_results.csv`.
     *   Statistical CSVs are saved to `results/csv/`.
     *   Visualizations are saved to `results/figures/`.
 
@@ -200,7 +200,6 @@ For demo setup and usage details, see: `demo/demoREADME.md`.
 AI-Based-Emotion-Detection/
 │
 ├── README.md                          # Project documentation
-├── emotion_results.csv                # Main results file (68 columns)
 │
 ├── code/                              # Source code
 │   ├── Emotion_AI_Final_Code.ipynb   # Main Colab notebook
@@ -214,6 +213,7 @@ AI-Based-Emotion-Detection/
 │   └── ... (68 more images)
 │
 └── results/                           # Generated analysis outputs
+    ├── emotion_results.csv            # Main results file (68 columns)
     ├── csv/                          # Statistical analysis results
     │   ├── per_emotion_accuracy.csv
     │   ├── demographic_bias_tests.csv
@@ -303,7 +303,7 @@ The repository includes generated CSV and PNG files detailing the following metr
 
 *   **Purpose:** Establishes an upper-bound performance benchmark.
 *   **Method:** Emotion considered "correct" if ≥1 model identifies it accurately.
-*   **Output:** Included in `emotion_results.csv`
+*   **Output:** Included in `results/emotion_results.csv`
 </details>
 
 ---
