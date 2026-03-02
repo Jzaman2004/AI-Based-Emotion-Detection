@@ -203,6 +203,22 @@ button.primary {
   color: #ffffff;
 }
 
+button.primary.is-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #1f2937;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
 button.secondary {
   background: #374151;
   color: #e5e7eb;

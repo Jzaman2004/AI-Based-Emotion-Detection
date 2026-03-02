@@ -5,6 +5,7 @@ const loading = document.getElementById("loading");
 const statusMessage = document.getElementById("status-message");
 const consentOverlay = document.getElementById("consent-overlay");
 const consentAgreeBtn = document.getElementById("consent-agree-btn");
+const captureBtnDefaultLabel = captureBtn ? captureBtn.innerHTML : "Capture &amp; Analyze";
 
 const captureCooldownMs = 5000;
 let lastCaptureTime = 0;
@@ -18,6 +19,11 @@ function setLoading(isLoading) {
   if (loading) {
     loading.hidden = !isLoading;
   }
+  captureBtn.classList.toggle("is-loading", isLoading);
+  captureBtn.setAttribute("aria-busy", isLoading ? "true" : "false");
+  captureBtn.innerHTML = isLoading
+    ? '<span class="btn-spinner" aria-hidden="true"></span><span>Analyzing...</span>'
+    : captureBtnDefaultLabel;
   captureBtn.disabled = isLoading;
 }
 
