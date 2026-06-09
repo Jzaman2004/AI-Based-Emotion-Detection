@@ -31,7 +31,7 @@
 
 Artificial intelligence (AI) has rapidly shaped industries since the release of transformer models. AI-based facial emotion recognition is entering high-stakes domains like school surveillance systems. While designed for safety, such invasive solutions risk reinforcing bias and misinterpreting emotions, threatening psychological well-being. The accuracy of transformer-based AI (TB-AI) at interpreting emotions remains uncertain, especially due to biased training data.
 
-This study systematically evaluates TB-AI's accuracy at classifying **seven emotions** (joy, sadness, anger, fear, disgust, surprise, hate) and assesses how **race/ethnicity**, **sex**, and **background context** affect this accuracy using a demographically balanced dataset of pictures presenting spontaneous facial expressions.
+This study systematically evaluates TB-AI's accuracy at classifying **seven emotions** (joy, sadness, anger, fear, disgust, surprise) and assesses how **race/ethnicity**, **sex**, and **background context** affect this accuracy using a demographically balanced dataset of pictures presenting spontaneous facial expressions.
 
 **Findings will inform fairness-aware benchmarks and ethical guidelines for emotion recognition systems that are more accurate, inclusive, and ethically aligned with human values.**
 
@@ -72,17 +72,17 @@ This project utilizes three open-weight multimodal vision-language models hosted
 ## 📊 Dataset & Methodology
 
 ### Dataset Composition
-*   **Total Images:** 70 open-source facial images.
+*   **Total Images:** 6000 open-source facial images.
 *   **Metadata File:** `data/Picture Set Tracking Sheet.xlsx` (image source, DOI, and license details).
 *   **Balance:** Balanced by sex, race/ethnicity, and expression intensity.
 *   **Demographics:**
-    *   **Sex:** Male, Female (35 each)
-    *   **Race:** Caucasian White, Black American, South Asian, East Asian, Latino (14 each)
-    *   **Emotions:** Joy, Sadness, Anger, Fear, Disgust, Surprise, Hate (10 each)
-*   **Naming Convention:** 4-letter Picture ID (e.g., `MCWJ` = **M**ale, **CW** (Caucasian White), **J**oy).
+    *   **Sex:** Male, Female
+    *   **Race:** Caucasian White, Black American, South Asian, East Asian, Latino 
+    *   **Emotions:** Joy, Sadness, Anger, Fear, Disgust, Surprise, Hate 
+*   **Naming Convention:** Picture ID (e.g., `MCWJ` = **M**ale, **CW** (Caucasian White), **J**oy).
 
 ### Processing Pipeline
-1.  **Pictureset Preparation:** Validation of 4-character ID formats.
+1.  **Pictureset Preparation:** Validation of character ID formats.
 2.  **Context Generation:** Each image is processed twice:
     *   **Original:** Unmodified image.
     *   **Black Background:** Background removed using `rembg` (U²-Net) and replaced with pure black.
@@ -168,9 +168,9 @@ valid_ids = sorted([
     cd AI-Based-Emotion-Detection
     ```
 2.  **Prepare Data:**
-    *   Upload the 70 facial images to your Google Drive folder `/MyDrive/Jawad Emotion AI`.
+    *   Upload the 6000 facial images to your Google Drive folder `/MyDrive/Jawad Emotion AI`.
     *   Keep the metadata tracking sheet (`Picture Set Tracking Sheet.xlsx`) in the repository `data/` folder.
-    *   Ensure images follow the 4-character ID naming convention (e.g., `MCWJ.png`).
+    *   Ensure images follow the character ID naming convention (e.g., `MCWJ.png`).
 3.  **Run the Notebook:**
     *   Open `code/Emotion_AI_Final_Code.ipynb` in Google Colab.
     *   Connect to a GPU runtime (T4/A100 recommended).
@@ -323,7 +323,7 @@ The repository includes generated CSV and PNG files detailing the following metr
 ## ⚠️ Limitations & Ethical Considerations
 
 *   **Age:** Age information is not available for faces in the pictureset; results should not be generalized to age-related performance.
-*   **Sample Size:** Only one image is used per (sex × race × emotion) combination due to resource constraints.
+*   **Sample Size:** Only one hundred image is used per (sex × race × emotion) combination due to resource constraints.
 *   **Diversity:** The pictureset does not include multiracial individuals.
 *   **Model Bias:** Each model was trained on different data sources, leading to uneven performance across races, genders, and emotional expressions.
 *   **Ethical Warning:** This research highlights risks in deploying AI for emotion recognition. These models should **not** be used for high-stakes decision-making (hiring, policing, surveillance) without extensive fairness auditing.
