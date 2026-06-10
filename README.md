@@ -92,7 +92,42 @@ This project utilizes three open-weight multimodal vision-language models hosted
 
 ---
 
-## 🛠️ Installation & Requirements
+## � 6000-Image Dataset Analysis
+
+### Expanded Study Results
+The project has been scaled from the initial pilot (70 images) to a comprehensive analysis using **6000 demographically balanced facial images**. This expanded dataset provides significantly more robust statistical validation.
+
+#### New Code & Data Files
+- **Code:** `code/AI_Emotion_6000.ipynb` (Jupyter Notebook) | `code/ai_emotion_6000.py` (Python script)
+- **Main Dataset:** `results/emotion_results_6000.csv` (6000 images × 3 models × 2 contexts = 12,000 inferences)
+
+#### Results Files (6000-Dataset)
+All statistical analyses have been recalculated on the expanded dataset:
+
+| File | Location | Purpose |
+| :--- | :--- | :--- |
+| `emotion_results_6000.csv` | `results/csv/` | Complete inference results |
+| `per_emotion_accuracy_6000.csv` | `results/csv/` | Emotion-wise accuracy with confidence intervals |
+| `demographic_bias_tests_6000.csv` | `results/csv/` | Fisher's exact test results by demographic |
+| `context_shift_analysis_6000.csv` | `results/csv/` | Background manipulation impact analysis |
+| `brier_scores_6000.csv` | `results/csv/` | Model calibration metrics |
+| `mcnemar_tests_6000.csv` | `results/csv/` | Pairwise model comparison tests |
+| `fairness_metrics.csv` | `results/csv/` | Equal Opportunity Difference across races |
+| `master_evaluation_matrix_6000.csv` | `results/csv/` | Comprehensive performance summary |
+
+#### Visualization Files (6000-Dataset)
+- Confusion matrices: `confusion_matrix_Qwen2-VL_6000.png`, `confusion_matrix_Phi-3_5-Vision_6000.png`, `confusion_matrix_Idefics2_6000.png`
+- Per-emotion accuracy: `per_emotion_accuracy_6000.png`, `per_emotion_accuracy_table_6000.png`
+- Demographic bias: `demographic_bias_heatmap_6000.png`, `demographic_bias_chart_6000.png`, `demographic_bias_table_6000.png`
+- Context shift: `context_shift_diverging_6000.png`, `context_shift_table_6000.png`
+- Calibration: `brier_calibration_6000.png`, `brier_calibration_table_6000.png`
+- Model comparison: `mcnemar_comparison_6000.png`, `mcnemar_tests_table_6000.png`
+- Fairness analysis: `fairness_metrics_table_6000.png`, `fairness_ladder_sophisticated.png`
+- Summary matrix: `master_evaluation_matrix_6000.png`
+
+---
+
+## �🛠️ Installation & Requirements
 
 This project is designed to run on **Google Colab Pro+** due to high GPU memory requirements.
 
@@ -202,8 +237,10 @@ AI-Based-Emotion-Detection/
 ├── README.md                          # Project documentation
 │
 ├── code/                              # Source code
-│   ├── Emotion_AI_Final_Code.ipynb   # Main Colab notebook
-│   └── emotion_ai_final_code.py      # Python script version
+│   ├── Emotion_AI_Final_Code.ipynb   # Main Colab notebook (70-image dataset)
+│   ├── emotion_ai_final_code.py      # Python script version (70-image dataset)
+│   ├── AI_Emotion_6000.ipynb         # Expanded analysis notebook (6000-image dataset)
+│   └── ai_emotion_6000.py            # Python script version (6000-image dataset)
 │
 ├── data/                              # Dataset assets
 │   ├── Picture Set Tracking Sheet.xlsx # Image metadata (source, DOI, license)
@@ -225,25 +262,49 @@ AI-Based-Emotion-Detection/
 │           └── results.js
 │
 └── results/                           # Generated analysis outputs
-    ├── emotion_results.csv            # Main results file (68 columns)
+    ├── emotion_results.csv            # Main results file (70 images, 68 columns)
+    ├── emotion_results_6000.csv       # Complete analysis results (6000 images)
     ├── csv/                          # Statistical analysis results
     │   ├── per_emotion_accuracy.csv
+    │   ├── per_emotion_accuracy_6000.csv
     │   ├── demographic_bias_tests.csv
+    │   ├── demographic_bias_tests_6000.csv
     │   ├── context_shift_analysis.csv
+    │   ├── context_shift_analysis_6000.csv
     │   ├── brier_scores.csv
+    │   ├── brier_scores_6000.csv
     │   ├── fairness_metrics.csv
-    │   └── mcnemar_tests.csv
+    │   ├── mcnemar_tests.csv
+    │   ├── mcnemar_tests_6000.csv
+    │   ├── master_evaluation_matrix_6000.csv
+    │   └── per_emotion_accuracy_6000.csv
     │
     └── figures/                      # Visualizations (PNG)
         ├── per_emotion_accuracy.png
+        ├── per_emotion_accuracy_6000.png
+        ├── per_emotion_accuracy_table_6000.png
         ├── mcnemar_comparison.png
+        ├── mcnemar_comparison_6000.png
+        ├── mcnemar_tests_table_6000.png
         ├── demographic_bias_heatmap.png
+        ├── demographic_bias_heatmap_6000.png
+        ├── demographic_bias_chart_6000.png
+        ├── demographic_bias_table_6000.png
         ├── context_shift_diverging.png
+        ├── context_shift_diverging_6000.png
+        ├── context_shift_table_6000.png
         ├── brier_calibration.png
+        ├── brier_calibration_6000.png
+        ├── brier_calibration_table_6000.png
         ├── confusion_matrix_qwen2.png
+        ├── confusion_matrix_Qwen2-VL_6000.png
         ├── confusion_matrix_phi.png
+        ├── confusion_matrix_Phi-3_5-Vision_6000.png
         ├── confusion_matrix_idefics2.png
-        └── fairness_ladder_sophisticated.png
+        ├── confusion_matrix_Idefics2_6000.png
+        ├── fairness_ladder_sophisticated.png
+        ├── fairness_metrics_table_6000.png
+        └── master_evaluation_matrix_6000.png
 ```
 
 ---

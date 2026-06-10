@@ -1,7 +1,0 @@
-Emotion,Mean TPR (%),Std Dev TPR (%),Min TPR (%),Max TPR (%),Max TPR Diff (%),Races with 0% TPR
-Joy,100.0,0.0,100.0,100.0,0.0,0
-Sadness,100.0,0.0,100.0,100.0,0.0,0
-Anger,69.1,4.6,61.7,72.6,10.9,0
-Fear,3.0,1.1,1.6,4.3,2.7,0
-Disgust,24.3,3.4,19.5,29.0,9.5,0
-Surprise,0.7,0.7,0.0,1.6,1.6,2
