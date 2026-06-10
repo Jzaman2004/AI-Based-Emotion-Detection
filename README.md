@@ -78,7 +78,7 @@ This project utilizes three open-weight multimodal vision-language models hosted
 *   **Demographics:**
     *   **Sex:** Male, Female
     *   **Race:** Caucasian White, Black American, South Asian, East Asian, Latino 
-    *   **Emotions:** Joy, Sadness, Anger, Fear, Disgust, Surprise, Hate 
+    *   **Emotions:** Joy, Sadness, Anger, Fear, Disgust, Surprise 
 *   **Naming Convention:** Picture ID (e.g., `MCWJ` = **M**ale, **CW** (Caucasian White), **J**oy).
 
 ### Processing Pipeline
@@ -92,7 +92,7 @@ This project utilizes three open-weight multimodal vision-language models hosted
 
 ---
 
-## � 6000-Image Dataset Analysis
+## 📈 6000-Image Dataset Analysis
 
 ### Expanded Study Results
 The project has been scaled from the initial pilot (70 images) to a comprehensive analysis using **6000 demographically balanced facial images**. This expanded dataset provides significantly more robust statistical validation.
@@ -127,7 +127,7 @@ All statistical analyses have been recalculated on the expanded dataset:
 
 ---
 
-## �🛠️ Installation & Requirements
+## 🛠️ Installation & Requirements
 
 This project is designed to run on **Google Colab Pro+** due to high GPU memory requirements.
 
