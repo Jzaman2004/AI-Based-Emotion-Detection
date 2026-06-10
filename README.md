@@ -31,7 +31,7 @@
 
 Artificial intelligence (AI) has rapidly shaped industries since the release of transformer models. AI-based facial emotion recognition is entering high-stakes domains like school surveillance systems. While designed for safety, such invasive solutions risk reinforcing bias and misinterpreting emotions, threatening psychological well-being. The accuracy of transformer-based AI (TB-AI) at interpreting emotions remains uncertain, especially due to biased training data.
 
-This study systematically evaluates TB-AI's accuracy at classifying **seven emotions** (joy, sadness, anger, fear, disgust, surprise) and assesses how **race/ethnicity**, **sex**, and **background context** affect this accuracy using a demographically balanced dataset of pictures presenting spontaneous facial expressions.
+This study systematically evaluates TB-AI's accuracy at classifying **six emotions** (joy, sadness, anger, fear, disgust, surprise) and assesses how **race/ethnicity**, **sex**, and **background context** affect this accuracy using a demographically balanced dataset of pictures presenting spontaneous facial expressions.
 
 **Findings will inform fairness-aware benchmarks and ethical guidelines for emotion recognition systems that are more accurate, inclusive, and ethically aligned with human values.**
 
