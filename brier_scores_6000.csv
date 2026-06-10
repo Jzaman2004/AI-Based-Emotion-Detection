@@ -1,0 +1,4 @@
+Model,Brier Score,Interpretation
+Qwen,0.512,Poorly calibrated
+Phi,0.45,Poorly calibrated
+Idefics,0.482,Poorly calibrated

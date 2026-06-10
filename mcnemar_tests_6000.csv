@@ -1,0 +1,4 @@
+Model A,Model B,Model A Correct,Model B Correct,p-value,Significant (α=0.05)
+Qwen,Phi,2693,3110,4.5086444905706215e-35,Yes
+Qwen,Idefics,2693,2891,8.640420592202621e-10,Yes
+Phi,Idefics,3110,2891,9.595459041981884e-11,Yes
