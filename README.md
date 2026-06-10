@@ -63,7 +63,7 @@ This project utilizes three open-weight multimodal vision-language models hosted
 
 | Model | Parameters | License | Developer | Key Characteristic |
 | :--- | :--- | :--- | :--- | :--- |
-| **Qwen2-VL-2B-Instruct** | 2B | Apache 2.0 | Alibaba Cloud | Specialized JSON prompt output |
+| **Qwen2-VL-2B-Instruct** | 2B | Apache 2.0 | Alibaba Cloud | JSON prompt output |
 | **Idefics2-8B** | 8B | Apache 2.0 | Hugging Face M4 | High computational demand |
 | **Phi-3.5-vision-instruct** | 4.2B (Lang) | MIT | Microsoft Research | Optimized for efficiency |
 
